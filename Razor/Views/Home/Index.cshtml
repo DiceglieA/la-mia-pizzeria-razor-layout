@@ -1,8 +1,41 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
+
+    //Esercizio 1
+
+    string name = "Angelo";
+    string surname = "Di Ceglie";
+
+    //esercizio 2
+    int SumNumbers(int n)
+    {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) sum += i;
+        return sum;
+    }
+
+    //esercizio 3
+
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    @*1. Dichiarare una variabile valorizzandola con il nostro nome.
+    Dichiarare un'altra variabile valorizzandola con il nostro cognome.
+    Stampare il nostro nome e cognome all'interno di un tag h2.*@
+
+    <h2>
+        @name @surname
+    </h2>
+</div>
+
+<div>
+    @*2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso)
+    Stampare dentro uno span il risultato.*@
+    <span>
+        @SumNumbers(6)
+    </span>
+</div>
+
+<div>
+    @*3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina*@
 </div>
